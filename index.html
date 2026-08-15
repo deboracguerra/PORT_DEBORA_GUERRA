@@ -1,0 +1,1338 @@
+<!doctype html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Primary Meta Tags -->
+  <title>Débora Guerra | Pós-Produção de Vídeo, Edição & Data Science</title>
+  <meta name="title" content="Débora Guerra | Pós-Produção de Vídeo, Edição & Data Science" />
+  <meta name="description" content="Portfólio de Débora Guerra. 14 anos de experiência em pós-produção de vídeo para Netflix, HBO, Amazon Prime Video e Globo. Editora indicada ao Emmy Awards 2025 e vencedora de prêmios de IA na L'Oréal Paris e Mondial. Graduanda em Ciência da Computação." />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://github.com/deboracguerra" />
+  <meta property="og:title" content="Débora Guerra | Pós-Produção de Vídeo & Data Science" />
+  <meta property="og:description" content="14 anos de pós-produção de vídeo para Netflix, HBO, Amazon Prime Video e Globo. Editora indicada ao Emmy 2025. Vencedora de prêmios de IA 2026." />
+  <meta property="og:image" content="1000000145_01.jpg" />
+
+  <!-- Google Fonts: Syne (Neo-Brutalist Display) & Plus Jakarta Sans (Modern Clean Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              black: '#0D0D0D',
+              dark: '#121212',
+              card: '#171717',
+              border: '#262626',
+              purple: '#8A2BE2',
+              'purple-hover': '#9B51E0',
+              'purple-glow': 'rgba(138, 43, 226, 0.4)',
+              muted: '#9CA3AF',
+              light: '#F3F4F6'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Syne"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace']
+          },
+          animation: {
+            'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            'marquee': 'marquee 35s linear infinite',
+          },
+          keyframes: {
+            marquee: {
+              '0%': { transform: 'translateX(0%)' },
+              '100%': { transform: 'translateX(-50%)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Neo-Brutalist & Editorial Styling */
+    ::selection {
+      background-color: #8A2BE2;
+      color: #FFFFFF;
+    }
+    
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0D0D0D;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #262626;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #8A2BE2;
+    }
+
+    .purple-circle-bg {
+      background: radial-gradient(circle, rgba(138, 43, 226, 0.95) 0%, rgba(138, 43, 226, 0.6) 50%, rgba(13, 13, 13, 0) 75%);
+    }
+
+    .purple-glow-shadow {
+      box-shadow: 0 0 50px -10px rgba(138, 43, 226, 0.5);
+    }
+
+    .neo-border {
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .neo-border-purple {
+      border: 1px solid rgba(138, 43, 226, 0.35);
+    }
+
+    .glass-card {
+      background: rgba(23, 23, 23, 0.7);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+  </style>
+</head>
+<body class="bg-brand-black text-gray-200 font-sans antialiased min-h-screen relative selection:bg-brand-purple selection:text-white overflow-x-hidden">
+
+  <!-- ==================================================
+       DECORATIVE VERTICAL MARGIN METADATA (Desktop only)
+       ================================================== -->
+  <aside aria-hidden="true" class="hidden xl:flex fixed left-4 top-1/2 -translate-y-1/2 flex-col items-center gap-6 z-40 pointer-events-none opacity-40 select-none">
+    <div class="h-16 w-px bg-white/20"></div>
+    <span class="font-mono text-[10px] tracking-[0.3em] uppercase text-white -rotate-90 origin-center whitespace-nowrap">
+      POST-PRODUCTION // DATA SCIENCE &amp; IA
+    </span>
+    <div class="h-16 w-px bg-brand-purple"></div>
+  </aside>
+
+  <aside aria-hidden="true" class="hidden xl:flex fixed right-4 top-1/2 -translate-y-1/2 flex-col items-center gap-6 z-40 pointer-events-none opacity-40 select-none">
+    <div class="h-16 w-px bg-brand-purple"></div>
+    <span class="font-mono text-[10px] tracking-[0.3em] uppercase text-white rotate-90 origin-center whitespace-nowrap">
+      EDITION 2026 // EMMY NOMINEE 2025
+    </span>
+    <div class="h-16 w-px bg-white/20"></div>
+  </aside>
+
+  <!-- ==================================================
+       HEADER / NAVBAR
+       ================================================== -->
+  <header class="sticky top-0 z-50 w-full bg-brand-black/90 backdrop-blur-md border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#hero" class="flex items-center gap-2 group cursor-pointer" id="nav-logo">
+        <div class="w-3 h-3 bg-brand-purple rounded-full shadow-[0_0_12px_#8A2BE2] group-hover:scale-125 transition-transform duration-300"></div>
+        <span class="font-display font-black text-xl sm:text-2xl tracking-wider text-white uppercase group-hover:text-brand-purple transition-colors">
+          DÉBORA GUERRA<span class="text-brand-purple">.</span>
+        </span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="hidden lg:flex items-center gap-7 text-xs uppercase tracking-widest font-semibold text-gray-300">
+        <a href="#sobre" class="hover:text-white transition-colors duration-200 py-1 relative hover:after:w-full after:w-0 after:h-0.5 after:bg-brand-purple after:absolute after:bottom-0 after:left-0 after:transition-all" data-i18n="nav_about">Sobre</a>
+        <a href="#showreel" class="hover:text-white transition-colors duration-200 py-1 relative hover:after:w-full after:w-0 after:h-0.5 after:bg-brand-purple after:absolute after:bottom-0 after:left-0 after:transition-all" data-i18n="nav_reel">Showreel</a>
+        <a href="#habilidades" class="hover:text-white transition-colors duration-200 py-1 relative hover:after:w-full after:w-0 after:h-0.5 after:bg-brand-purple after:absolute after:bottom-0 after:left-0 after:transition-all" data-i18n="nav_skills">Habilidades</a>
+        <a href="#experiencia" class="hover:text-white transition-colors duration-200 py-1 relative hover:after:w-full after:w-0 after:h-0.5 after:bg-brand-purple after:absolute after:bottom-0 after:left-0 after:transition-all" data-i18n="nav_experience">Experiência</a>
+        <a href="#formacao" class="hover:text-white transition-colors duration-200 py-1 relative hover:after:w-full after:w-0 after:h-0.5 after:bg-brand-purple after:absolute after:bottom-0 after:left-0 after:transition-all" data-i18n="nav_education">Formação</a>
+        <a href="#projetos" class="hover:text-white transition-colors duration-200 py-1 relative hover:after:w-full after:w-0 after:h-0.5 after:bg-brand-purple after:absolute after:bottom-0 after:left-0 after:transition-all" data-i18n="nav_projects">Projetos</a>
+        <a href="#contato" class="hover:text-white transition-colors duration-200 py-1 relative hover:after:w-full after:w-0 after:h-0.5 after:bg-brand-purple after:absolute after:bottom-0 after:left-0 after:transition-all" data-i18n="nav_contact">Contato</a>
+      </nav>
+
+      <!-- Language Toggle & Direct Social Links -->
+      <div class="flex items-center gap-3">
+        
+        <!-- Language Switcher Button [ PT | EN ] -->
+        <div class="flex items-center bg-brand-card p-1 rounded-md border border-white/10">
+          <button id="lang-btn-pt" onclick="setLanguage('pt')" class="px-2.5 py-1 text-xs font-mono font-bold rounded transition-all duration-200 bg-brand-purple text-white shadow-sm" aria-label="Português">
+            PT
+          </button>
+          <button id="lang-btn-en" onclick="setLanguage('en')" class="px-2.5 py-1 text-xs font-mono font-bold rounded transition-all duration-200 text-gray-400 hover:text-white" aria-label="English">
+            EN
+          </button>
+        </div>
+
+        <!-- Social Icons (Desktop) -->
+        <div class="hidden sm:flex items-center gap-2 pl-2 border-l border-white/10">
+          <!-- GitHub -->
+          <a href="https://github.com/deboracguerra" target="_blank" rel="noopener noreferrer" class="p-2 text-gray-400 hover:text-white hover:bg-white/5 rounded-md transition-colors" title="GitHub" id="header-github">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/d%C3%A9bora-guerra-534b80a6/" target="_blank" rel="noopener noreferrer" class="p-2 text-gray-400 hover:text-white hover:bg-white/5 rounded-md transition-colors" title="LinkedIn" id="header-linkedin">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <!-- YouTube -->
+          <a href="https://www.youtube.com/watch?v=_buhS1ynzO8" target="_blank" rel="noopener noreferrer" class="p-2 text-gray-400 hover:text-red-500 hover:bg-white/5 rounded-md transition-colors" title="Showreel no YouTube" id="header-youtube">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="lg:hidden p-2 text-gray-300 hover:text-white rounded-md focus:outline-none" aria-label="Toggle Menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+        </button>
+
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Navigation -->
+    <div id="mobile-menu" class="hidden lg:hidden border-b border-white/10 bg-brand-card/95 px-6 py-5 space-y-4">
+      <nav class="flex flex-col gap-3 font-semibold text-sm uppercase tracking-wider">
+        <a href="#sobre" onclick="toggleMobileMenu()" class="hover:text-brand-purple transition-colors py-1" data-i18n="nav_about">Sobre</a>
+        <a href="#showreel" onclick="toggleMobileMenu()" class="hover:text-brand-purple transition-colors py-1" data-i18n="nav_reel">Showreel</a>
+        <a href="#habilidades" onclick="toggleMobileMenu()" class="hover:text-brand-purple transition-colors py-1" data-i18n="nav_skills">Habilidades</a>
+        <a href="#experiencia" onclick="toggleMobileMenu()" class="hover:text-brand-purple transition-colors py-1" data-i18n="nav_experience">Experiência</a>
+        <a href="#formacao" onclick="toggleMobileMenu()" class="hover:text-brand-purple transition-colors py-1" data-i18n="nav_education">Formação</a>
+        <a href="#projetos" onclick="toggleMobileMenu()" class="hover:text-brand-purple transition-colors py-1" data-i18n="nav_projects">Projetos</a>
+        <a href="#contato" onclick="toggleMobileMenu()" class="hover:text-brand-purple transition-colors py-1" data-i18n="nav_contact">Contato</a>
+      </nav>
+      <div class="pt-4 border-t border-white/10 flex items-center gap-4">
+        <a href="https://github.com/deboracguerra" target="_blank" class="text-xs font-mono text-gray-300 hover:text-brand-purple flex items-center gap-1">GitHub</a>
+        <a href="https://www.linkedin.com/in/d%C3%A9bora-guerra-534b80a6/" target="_blank" class="text-xs font-mono text-gray-300 hover:text-brand-purple flex items-center gap-1">LinkedIn</a>
+        <a href="https://wa.me/5511964844975" target="_blank" class="text-xs font-mono text-emerald-400 hover:text-emerald-300 flex items-center gap-1">WhatsApp</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================================================
+         SEÇÃO 1: HERO & BIO (DARK EDITORIAL & NEO-BRUTALIST)
+         ================================================== -->
+    <section id="hero" class="relative pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden border-b border-white/10">
+      
+      <!-- Subtle Background Grid & Glow FX -->
+      <div class="absolute inset-0 bg-[linear-gradient(to_right,#1f1f1f_1px,transparent_1px),linear-gradient(to_bottom,#1f1f1f_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-30 pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <!-- Status Badge -->
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-card neo-border mb-8 shadow-sm">
+          <span class="w-2.5 h-2.5 rounded-full bg-brand-purple animate-pulse"></span>
+          <span class="font-mono text-xs text-gray-300 uppercase tracking-wider" data-i18n="hero_status">
+            DISPONÍVEL PARA PROJETOS &amp; DESAFIOS // 2026
+          </span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- Left Column: Typography, Bio & Actions (Col 7) -->
+          <div class="lg:col-span-7 flex flex-col items-start text-left">
+            
+            <h1 class="font-display font-black text-4xl sm:text-6xl md:text-7xl uppercase tracking-tight text-white leading-none mb-4" id="main-heading">
+              DÉBORA<br class="hidden sm:inline" />
+              <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-purple via-purple-400 to-white">GUERRA</span>
+            </h1>
+
+            <div class="inline-block px-3 py-1 bg-white/5 neo-border-purple text-brand-purple font-mono text-xs sm:text-sm uppercase tracking-widest font-bold mb-6">
+              <span data-i18n="hero_subtitle">PÓS-PRODUÇÃO DE VÍDEO | EDIÇÃO, FINALIZAÇÃO &amp; DATA SCIENCE</span>
+            </div>
+
+            <!-- Awards Highlight Badges -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 w-full mb-8">
+              <div class="bg-brand-card/90 neo-border p-3 rounded-lg flex items-center gap-3">
+                <div class="text-xl">⭐</div>
+                <div class="text-[11px] leading-snug">
+                  <span class="font-bold text-white block uppercase" data-i18n="badge_emmy_title">EMMY AWARDS 2025</span>
+                  <span class="text-gray-400" data-i18n="badge_emmy_sub">Editora Indicada</span>
+                </div>
+              </div>
+              <div class="bg-brand-card/90 neo-border-purple p-3 rounded-lg flex items-center gap-3">
+                <div class="text-xl">🏆</div>
+                <div class="text-[11px] leading-snug">
+                  <span class="font-bold text-purple-300 block uppercase" data-i18n="badge_loreal_title">L'ORÉAL PARIS 2026</span>
+                  <span class="text-gray-400" data-i18n="badge_loreal_sub">Vencedora Edição c/ IA</span>
+                </div>
+              </div>
+              <div class="bg-brand-card/90 neo-border-purple p-3 rounded-lg flex items-center gap-3">
+                <div class="text-xl">🏆</div>
+                <div class="text-[11px] leading-snug">
+                  <span class="font-bold text-purple-300 block uppercase" data-i18n="badge_mondial_title">MONDIAL &amp; AIWA 2026</span>
+                  <span class="text-gray-400" data-i18n="badge_mondial_sub">Vencedora Inovação IA</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Narrative Bio -->
+            <p class="text-base sm:text-lg text-gray-300 font-normal leading-relaxed mb-8 max-w-2xl" data-i18n="hero_bio">
+              Profissional com 14 anos de sólida experiência em edição e finalização de vídeos para gigantes globais como Netflix, HBO, Amazon Prime Video e Globo. Editora do projeto "Bora, o Pódio é Nosso" (indicado ao EMMY AWARDS 2025). Vencedora de concursos nacionais e corporativos de edição com Inteligência Artificial na Mondial (2026) e L'Oréal Paris (2026). Atualmente em expansão contínua para Ciência de Dados e IA como graduanda em Ciência da Computação.
+            </p>
+
+            <!-- CTA Action Buttons -->
+            <div class="flex flex-wrap items-center gap-4 w-full sm:w-auto">
+              <a href="#showreel" class="w-full sm:w-auto px-7 py-3.5 bg-brand-purple hover:bg-brand-purple-hover text-white font-display font-bold uppercase text-xs tracking-widest rounded transition-all duration-300 flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(138,43,226,0.5)] cursor-pointer" id="cta-reel">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                <span data-i18n="btn_watch_reel">Ver Showreel</span>
+              </a>
+
+              <a href="https://wa.me/5511964844975" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-7 py-3.5 bg-white/10 hover:bg-white/20 neo-border text-white font-display font-bold uppercase text-xs tracking-widest rounded transition-all duration-300 flex items-center justify-center gap-2" id="cta-whatsapp">
+                <svg class="w-4 h-4 text-emerald-400 fill-current" viewBox="0 0 24 24"><path d="M12.031 0C5.405 0 .013 5.393.013 12.02c0 2.115.549 4.18 1.596 6.002L0 24l6.135-1.579c1.761.96 3.754 1.467 5.896 1.467 6.626 0 12.018-5.393 12.018-12.02C24.049 5.393 18.657 0 12.031 0zm0 22.023c-1.85 0-3.665-.497-5.253-1.442l-.377-.224-3.905 1.006 1.042-3.807-.246-.391c-1.037-1.65-1.586-3.559-1.586-5.522 0-5.528 4.498-10.026 10.03-10.026 5.532 0 10.03 4.498 10.03 10.026 0 5.528-4.498 10.026-10.03 10.026zm5.492-7.533c-.301-.151-1.782-.879-2.058-.98-.276-.1-.476-.151-.677.151-.2.301-.778.98-.954 1.18-.176.2-.351.226-.652.075-.301-.151-1.272-.469-2.423-1.496-.895-.798-1.5-1.784-1.676-2.085-.176-.301-.019-.464.132-.614.136-.135.301-.351.451-.527.151-.176.2-.301.301-.502.1-.2.05-.376-.025-.527-.075-.151-.677-1.633-.928-2.235-.245-.587-.493-.507-.677-.516l-.578-.01c-.2 0-.527.075-.803.376s-1.054 1.03-1.054 2.511c0 1.482 1.079 2.913 1.23 3.114.151.2 2.124 3.243 5.145 4.549.719.311 1.28.497 1.718.636.722.229 1.378.197 1.898.119.579-.087 1.782-.728 2.033-1.431.251-.703.251-1.305.176-1.431-.076-.126-.276-.201-.577-.352z"/></svg>
+                <span data-i18n="btn_whatsapp">WhatsApp</span>
+              </a>
+
+              <a href="https://github.com/deboracguerra" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-5 py-3.5 bg-brand-card hover:bg-white/5 neo-border text-gray-300 hover:text-white font-mono text-xs uppercase tracking-wider rounded transition-colors flex items-center justify-center gap-2" id="cta-github">
+                <span>GitHub</span>
+                <svg class="w-3.5 h-3.5 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </a>
+
+              <a href="https://www.linkedin.com/in/d%C3%A9bora-guerra-534b80a6/" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-5 py-3.5 bg-brand-card hover:bg-white/5 neo-border text-gray-300 hover:text-white font-mono text-xs uppercase tracking-wider rounded transition-colors flex items-center justify-center gap-2" id="cta-linkedin">
+                <span>LinkedIn</span>
+                <svg class="w-3.5 h-3.5 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Profile Picture with VIBRANT PURPLE CIRCLE BACKDROP (#8A2BE2) (Col 5) -->
+          <div class="lg:col-span-5 flex justify-center lg:justify-end">
+            <div class="relative w-72 sm:w-88 md:w-96 aspect-square flex items-center justify-center">
+              
+              <!-- Vibrant Electric Purple Circle Backdrop (#8A2BE2) -->
+              <div class="absolute w-[90%] h-[90%] rounded-full bg-brand-purple purple-glow-shadow opacity-95 transition-transform duration-700 hover:scale-105"></div>
+              
+              <!-- Secondary Inner Gradient Ring -->
+              <div class="absolute w-[96%] h-[96%] rounded-full border border-white/20"></div>
+
+              <!-- Timecode / Camera Frame Overlay Markings -->
+              <div class="absolute top-2 left-2 font-mono text-[10px] text-white/70 bg-black/60 px-2 py-0.5 rounded backdrop-blur-sm z-20">
+                REC ● 01:14:26:00
+              </div>
+              <div class="absolute bottom-2 right-2 font-mono text-[10px] text-white/70 bg-black/60 px-2 py-0.5 rounded backdrop-blur-sm z-20">
+                4K RAW // 24 FPS
+              </div>
+
+              <!-- Profile Image Tag with Fallback Handler -->
+              <div class="relative w-[85%] h-[85%] rounded-full overflow-hidden neo-border z-10 bg-brand-dark shadow-2xl">
+                <img 
+                  src="1000000145_01.jpg" 
+                  alt="Débora Guerra" 
+                  id="profile-img"
+                  class="w-full h-full object-cover object-center filter grayscale contrast-105 hover:grayscale-0 transition-all duration-500"
+                  onerror="if (!this.dataset.triedPng) { this.dataset.triedPng = '1'; this.src = '1000000145_01.png'; } else if (!this.dataset.triedOrig) { this.dataset.triedOrig = '1'; this.src = '1000000145.jpg'; } else { this.onerror = null; this.src = 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80'; }"
+                />
+              </div>
+
+              <!-- Orbiting Tech Pill -->
+              <div class="absolute -bottom-3 left-4 bg-brand-card neo-border px-4 py-2 rounded-md shadow-xl z-20 flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                <span class="font-mono text-xs text-white font-semibold">14+ ANOS EXPERIÊNCIA</span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Metrics Strip -->
+        <div class="mt-16 pt-10 border-t border-white/10 grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div>
+            <div class="font-display font-black text-3xl sm:text-4xl text-white">14+</div>
+            <div class="font-mono text-xs uppercase tracking-wider text-gray-400 mt-1" data-i18n="metric_years">Anos em Pós-Produção</div>
+          </div>
+          <div>
+            <div class="font-display font-black text-3xl sm:text-4xl text-brand-purple">30+</div>
+            <div class="font-mono text-xs uppercase tracking-wider text-gray-400 mt-1" data-i18n="metric_brands">Grandes Marcas Atendidas</div>
+          </div>
+          <div>
+            <div class="font-display font-black text-3xl sm:text-4xl text-white">01</div>
+            <div class="font-mono text-xs uppercase tracking-wider text-gray-400 mt-1" data-i18n="metric_emmy">Indicação ao EMMY 2025</div>
+          </div>
+          <div>
+            <div class="font-display font-black text-3xl sm:text-4xl text-brand-purple">02</div>
+            <div class="font-mono text-xs uppercase tracking-wider text-gray-400 mt-1" data-i18n="metric_awards">Prêmios de IA em 2026</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================================================
+         SEÇÃO 2: SHOWREEL / VÍDEO DO REEL (DESTAQUE MÁXIMO)
+         ================================================== -->
+    <section id="showreel" class="py-20 md:py-28 bg-brand-dark relative border-b border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+          <div>
+            <span class="font-mono text-xs font-bold text-brand-purple uppercase tracking-[0.2em] block mb-2" data-i18n="reel_tag">DESTAQUE AUDIOVISUAL</span>
+            <h2 class="font-display font-black text-3xl sm:text-5xl uppercase tracking-tight text-white" data-i18n="reel_title">
+              SHOWREEL &amp; TRABALHOS EM VÍDEO
+            </h2>
+          </div>
+          <p class="text-sm text-gray-400 font-mono max-w-md" data-i18n="reel_desc">
+            Edição rítmica, narrativa documental, color grading cinematográfico e finalização de alta precisão.
+          </p>
+        </div>
+
+        <!-- Neo-Brutalist Video Embed Viewport: Video 1 (Main Showreel) -->
+        <div class="w-full bg-brand-black rounded-xl overflow-hidden neo-border-purple shadow-[0_0_50px_rgba(138,43,226,0.15)] mb-10">
+          
+          <!-- Mock Video Player Header -->
+          <div class="bg-brand-card px-4 py-3 border-b border-white/10 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <span class="w-3 h-3 rounded-full bg-red-500 inline-block"></span>
+              <span class="w-3 h-3 rounded-full bg-yellow-500 inline-block"></span>
+              <span class="w-3 h-3 rounded-full bg-green-500 inline-block"></span>
+              <span class="ml-3 font-mono text-xs text-gray-300 font-semibold" data-i18n="reel_main_header">01 // SHOWREEL PRINCIPAL (CINEMA, TV &amp; STREAMING)</span>
+            </div>
+            <div class="flex items-center gap-3 font-mono text-xs text-brand-purple font-semibold">
+              <span>HD 1080p // REEL</span>
+            </div>
+          </div>
+
+          <!-- YouTube Embed Container (16:9 Aspect Ratio) -->
+          <div class="relative w-full aspect-video bg-black">
+            <iframe 
+              class="w-full h-full border-0"
+              src="https://www.youtube.com/embed/_buhS1ynzO8?rel=0&modestbranding=1" 
+              title="Débora Guerra Showreel" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen
+              id="youtube-iframe">
+            </iframe>
+          </div>
+
+          <!-- Player Bottom Bar & Direct YouTube Link Button -->
+          <div class="p-4 sm:p-6 bg-brand-card flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-white/10">
+            <div class="text-xs text-gray-400 text-center sm:text-left">
+              <span class="font-bold text-white uppercase block mb-0.5" data-i18n="reel_footer_note">Trabalhos em Streaming, Publicidade &amp; Reality Shows</span>
+              Netflix, HBO Max, Amazon Prime Video, Multishow, Sentimental Filme &amp; Gloob.
+            </div>
+            <a 
+              href="https://www.youtube.com/watch?v=_buhS1ynzO8" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-display font-bold text-xs uppercase tracking-wider rounded transition-colors flex items-center gap-2 whitespace-nowrap"
+              id="btn-open-youtube">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              <span data-i18n="btn_open_youtube">Abrir no YouTube</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Neo-Brutalist Video Embed Viewport: Video 2 (TikTok & Short-Form Portfolio) -->
+        <div class="w-full bg-brand-black rounded-xl overflow-hidden neo-border-purple shadow-[0_0_50px_rgba(138,43,226,0.15)]">
+          
+          <!-- Mock Video Player Header -->
+          <div class="bg-brand-card px-4 py-3 border-b border-white/10 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <span class="w-3 h-3 rounded-full bg-red-500 inline-block"></span>
+              <span class="w-3 h-3 rounded-full bg-yellow-500 inline-block"></span>
+              <span class="w-3 h-3 rounded-full bg-green-500 inline-block"></span>
+              <span class="ml-3 font-mono text-xs text-gray-300 font-semibold" data-i18n="reel_tiktok_header">02 // PORTFÓLIO LINGUAGEM DE TIKTOK &amp; REDES SOCIAIS</span>
+            </div>
+            <div class="flex items-center gap-3 font-mono text-xs text-brand-purple font-semibold">
+              <span class="px-2.5 py-0.5 rounded bg-brand-purple/20 text-purple-200 uppercase tracking-wider">TIKTOK / REELS / SHORTS</span>
+            </div>
+          </div>
+
+          <!-- YouTube Embed Container (16:9 Aspect Ratio) -->
+          <div class="relative w-full aspect-video bg-black">
+            <iframe 
+              class="w-full h-full border-0"
+              src="https://www.youtube.com/embed/hhK9b3ZXXqA?rel=0&modestbranding=1" 
+              title="Débora Guerra - Portfólio de Linguagem TikTok e Redes Sociais" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen
+              id="youtube-tiktok-iframe">
+            </iframe>
+          </div>
+
+          <!-- Player Bottom Bar & Direct YouTube Link Button -->
+          <div class="p-4 sm:p-6 bg-brand-card flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-white/10">
+            <div class="text-xs text-gray-400 text-center sm:text-left">
+              <span class="font-bold text-white uppercase block mb-0.5" data-i18n="reel_tiktok_title">Portfólio de Linguagem de TikTok &amp; Formatos Verticais</span>
+              <span data-i18n="reel_tiktok_desc">Edição dinâmica, ritmo acelerado, retenção de atenção, cortes rítmicos, legendagem criativa e adaptação para o ecossistema digital.</span>
+            </div>
+            <a 
+              href="https://youtu.be/hhK9b3ZXXqA" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-display font-bold text-xs uppercase tracking-wider rounded transition-colors flex items-center gap-2 whitespace-nowrap"
+              id="btn-open-youtube-tiktok">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              <span data-i18n="btn_open_youtube_tiktok">Ver no YouTube</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================================================
+         SEÇÃO 3: HABILIDADES & TECH STACK (VÍDEO + DADOS/IA)
+         ================================================== -->
+    <section id="habilidades" class="py-20 md:py-28 relative border-b border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="mb-14">
+          <span class="font-mono text-xs font-bold text-brand-purple uppercase tracking-[0.2em] block mb-2" data-i18n="skills_tag">EXPERTISE TÉCNICA</span>
+          <h2 class="font-display font-black text-3xl sm:text-5xl uppercase tracking-tight text-white mb-4" data-i18n="skills_title">
+            HABILIDADES &amp; TECH STACK
+          </h2>
+          <p class="text-gray-400 max-w-2xl text-base" data-i18n="skills_desc">
+            A convergência entre o rigor da pós-produção audiovisual de alto nível e as metodologias modernas de Inteligência Artificial e Ciência de Dados.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Card 1: Softwares de Vídeo -->
+          <div class="bg-brand-card neo-border rounded-xl p-6 hover:border-brand-purple transition-all duration-300 group flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-lg bg-brand-purple/10 neo-border-purple flex items-center justify-center text-brand-purple mb-5 group-hover:scale-110 transition-transform">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+              </div>
+              <h3 class="font-display font-bold text-lg text-white uppercase tracking-wider mb-2" data-i18n="skill_cat_1">
+                Softwares de Vídeo
+              </h3>
+              <p class="text-xs text-gray-400 mb-5 leading-relaxed" data-i18n="skill_cat_1_sub">
+                Edição offline, montagem, conformação, correção de cor e finalização de master.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-2 pt-4 border-t border-white/5 font-mono text-xs">
+              <span class="px-2.5 py-1 bg-white/5 rounded text-gray-300">Avid Media Composer</span>
+              <span class="px-2.5 py-1 bg-white/5 rounded text-gray-300">DaVinci Resolve</span>
+              <span class="px-2.5 py-1 bg-white/5 rounded text-gray-300">Premiere Pro</span>
+              <span class="px-2.5 py-1 bg-white/5 rounded text-gray-300">After Effects</span>
+              <span class="px-2.5 py-1 bg-white/5 rounded text-gray-300">Photoshop</span>
+              <span class="px-2.5 py-1 bg-white/5 rounded text-gray-300">CapCut</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Criação & IA Generativa -->
+          <div class="bg-brand-card neo-border-purple rounded-xl p-6 hover:border-brand-purple transition-all duration-300 group flex flex-col justify-between shadow-[0_0_30px_rgba(138,43,226,0.08)]">
+            <div>
+              <div class="w-12 h-12 rounded-lg bg-brand-purple/20 neo-border-purple flex items-center justify-center text-brand-purple mb-5 group-hover:scale-110 transition-transform">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+              </div>
+              <h3 class="font-display font-bold text-lg text-white uppercase tracking-wider mb-2" data-i18n="skill_cat_2">
+                Criação &amp; IA Generativa
+              </h3>
+              <p class="text-xs text-gray-400 mb-5 leading-relaxed" data-i18n="skill_cat_2_sub">
+                Workflows premiados de geração de vídeo, animação neural, dublagem e direção de fotografia.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-2 pt-4 border-t border-white/5 font-mono text-xs">
+              <span class="px-2.5 py-1 bg-brand-purple/20 text-purple-200 rounded font-semibold">Vídeo com IA</span>
+              <span class="px-2.5 py-1 bg-brand-purple/20 text-purple-200 rounded font-semibold">IAs Generativas</span>
+              <span class="px-2.5 py-1 bg-white/5 rounded text-gray-300">Captação de Imagem</span>
+              <span class="px-2.5 py-1 bg-white/5 rounded text-gray-300">Direção de Fotografia</span>
+              <span class="px-2.5 py-1 bg-white/5 rounded text-gray-300">Prompt Engineering</span>
+            </div>
+          </div>
+
+          <!-- Card 3: Dados & Programação -->
+          <div class="bg-brand-card neo-border rounded-xl p-6 hover:border-brand-purple transition-all duration-300 group flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-lg bg-brand-purple/10 neo-border-purple flex items-center justify-center text-brand-purple mb-5 group-hover:scale-110 transition-transform">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+              </div>
+              <h3 class="font-display font-bold text-lg text-white uppercase tracking-wider mb-2" data-i18n="skill_cat_3">
+                Dados &amp; Programação
+              </h3>
+              <p class="text-xs text-gray-400 mb-5 leading-relaxed" data-i18n="skill_cat_3_sub">
+                Manipulação analítica, modelagem preditiva, automação e arquitetura cloud.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-2 pt-4 border-t border-white/5 font-mono text-xs">
+              <span class="px-2.5 py-1 bg-white/5 rounded text-gray-300">Python</span>
+              <span class="px-2.5 py-1 bg-white/5 rounded text-gray-300">Pandas &amp; NumPy</span>
+              <span class="px-2.5 py-1 bg-white/5 rounded text-gray-300">Scikit-Learn</span>
+              <span class="px-2.5 py-1 bg-white/5 rounded text-gray-300">SQL / MySQL</span>
+              <span class="px-2.5 py-1 bg-white/5 rounded text-gray-300">ETL / ELT</span>
+              <span class="px-2.5 py-1 bg-white/5 rounded text-gray-300">Oracle OCI</span>
+            </div>
+          </div>
+
+          <!-- Card 4: Ferramentas & Ambientes -->
+          <div class="bg-brand-card neo-border rounded-xl p-6 hover:border-brand-purple transition-all duration-300 group flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-lg bg-brand-purple/10 neo-border-purple flex items-center justify-center text-brand-purple mb-5 group-hover:scale-110 transition-transform">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+              </div>
+              <h3 class="font-display font-bold text-lg text-white uppercase tracking-wider mb-2" data-i18n="skill_cat_4">
+                Ferramentas &amp; BI
+              </h3>
+              <p class="text-xs text-gray-400 mb-5 leading-relaxed" data-i18n="skill_cat_4_sub">
+                Versionamento colaborativo, dashboards analíticos e organização operacional.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-2 pt-4 border-t border-white/5 font-mono text-xs">
+              <span class="px-2.5 py-1 bg-white/5 rounded text-gray-300">Git &amp; GitHub</span>
+              <span class="px-2.5 py-1 bg-white/5 rounded text-gray-300">Looker Studio</span>
+              <span class="px-2.5 py-1 bg-white/5 rounded text-gray-300">Excel / Sheets</span>
+              <span class="px-2.5 py-1 bg-white/5 rounded text-gray-300">Oracle APEX</span>
+              <span class="px-2.5 py-1 bg-white/5 rounded text-gray-300">Jupyter</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================================================
+         SEÇÃO 4: EXPERIÊNCIA & CLIENTES DE DESTAQUE
+         ================================================== -->
+    <section id="experiencia" class="py-20 md:py-28 bg-brand-dark relative border-b border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="mb-12 text-center md:text-left">
+          <span class="font-mono text-xs font-bold text-brand-purple uppercase tracking-[0.2em] block mb-2" data-i18n="exp_tag">TRAJETÓRIA PROFISSIONAL</span>
+          <h2 class="font-display font-black text-3xl sm:text-5xl uppercase tracking-tight text-white mb-4" data-i18n="exp_title">
+            EXPERIÊNCIA &amp; CLIENTES DE DESTAQUE
+          </h2>
+          <p class="text-gray-400 max-w-2xl text-base" data-i18n="exp_desc">
+            Trabalhos realizados para os maiores serviços de streaming, canais de TV e marcas multinacionais.
+          </p>
+        </div>
+
+        <!-- Major Client Badges Grid / Wall -->
+        <div class="mb-16 p-6 sm:p-8 bg-brand-black rounded-2xl neo-border">
+          <div class="text-xs font-mono text-gray-400 uppercase tracking-widest mb-6 flex items-center gap-2">
+            <span class="w-2 h-2 bg-brand-purple rounded-full"></span>
+            <span data-i18n="brands_header">MARCAS E PLAYERS ATENDIDOS</span>
+          </div>
+          
+          <div class="flex flex-wrap gap-2.5 sm:gap-3 justify-center items-center">
+            <span class="px-4 py-2 bg-brand-card hover:bg-white/10 neo-border rounded font-display font-extrabold text-sm sm:text-base tracking-wider text-white">NETFLIX</span>
+            <span class="px-4 py-2 bg-brand-card hover:bg-white/10 neo-border rounded font-display font-extrabold text-sm sm:text-base tracking-wider text-white">HBO</span>
+            <span class="px-4 py-2 bg-brand-card hover:bg-white/10 neo-border rounded font-display font-extrabold text-sm sm:text-base tracking-wider text-white">AMAZON PRIME VIDEO</span>
+            <span class="px-4 py-2 bg-brand-card hover:bg-white/10 neo-border rounded font-display font-extrabold text-sm sm:text-base tracking-wider text-white">GLOBOPLAY</span>
+            <span class="px-4 py-2 bg-brand-card hover:bg-white/10 neo-border rounded font-display font-extrabold text-sm sm:text-base tracking-wider text-white">GLOOB</span>
+            <span class="px-4 py-2 bg-brand-card hover:bg-white/10 neo-border rounded font-display font-extrabold text-sm sm:text-base tracking-wider text-white">MULTISHOW</span>
+            <span class="px-4 py-2 bg-brand-purple/20 neo-border-purple rounded font-display font-extrabold text-sm sm:text-base tracking-wider text-purple-200">L'ORÉAL PARIS</span>
+            <span class="px-4 py-2 bg-brand-purple/20 neo-border-purple rounded font-display font-extrabold text-sm sm:text-base tracking-wider text-purple-200">MONDIAL</span>
+            <span class="px-4 py-2 bg-brand-purple/20 neo-border-purple rounded font-display font-extrabold text-sm sm:text-base tracking-wider text-purple-200">AIWA</span>
+            <span class="px-3.5 py-1.5 bg-white/5 rounded text-xs font-mono text-gray-300">FIAT</span>
+            <span class="px-3.5 py-1.5 bg-white/5 rounded text-xs font-mono text-gray-300">BURGER KING</span>
+            <span class="px-3.5 py-1.5 bg-white/5 rounded text-xs font-mono text-gray-300">SAMSUNG</span>
+            <span class="px-3.5 py-1.5 bg-white/5 rounded text-xs font-mono text-gray-300">COCA-COLA</span>
+            <span class="px-3.5 py-1.5 bg-white/5 rounded text-xs font-mono text-gray-300">MCDONALD'S</span>
+            <span class="px-3.5 py-1.5 bg-white/5 rounded text-xs font-mono text-gray-300">NUBANK</span>
+            <span class="px-3.5 py-1.5 bg-white/5 rounded text-xs font-mono text-gray-300">TIKTOK</span>
+            <span class="px-3.5 py-1.5 bg-white/5 rounded text-xs font-mono text-gray-300">VIVO</span>
+            <span class="px-3.5 py-1.5 bg-white/5 rounded text-xs font-mono text-gray-300">BRADESCO</span>
+            <span class="px-3.5 py-1.5 bg-white/5 rounded text-xs font-mono text-gray-300">UBER EATS</span>
+            <span class="px-3.5 py-1.5 bg-white/5 rounded text-xs font-mono text-gray-300">MAGALU</span>
+            <span class="px-3.5 py-1.5 bg-white/5 rounded text-xs font-mono text-gray-300">VEJA</span>
+            <span class="px-3.5 py-1.5 bg-white/5 rounded text-xs font-mono text-gray-300">VW TRUCKS</span>
+            <span class="px-3.5 py-1.5 bg-white/5 rounded text-xs font-mono text-gray-300">CLUB SOCIAL</span>
+            <span class="px-3.5 py-1.5 bg-white/5 rounded text-xs font-mono text-gray-300">CONSUL</span>
+            <span class="px-3.5 py-1.5 bg-white/5 rounded text-xs font-mono text-gray-300">CALL OF DUTY</span>
+            <span class="px-3.5 py-1.5 bg-white/5 rounded text-xs font-mono text-gray-300">EISENBAHN</span>
+            <span class="px-3.5 py-1.5 bg-white/5 rounded text-xs font-mono text-gray-300">WEBMOTORS</span>
+            <span class="px-3.5 py-1.5 bg-white/5 rounded text-xs font-mono text-gray-300">FABER-CASTELL</span>
+            <span class="px-3.5 py-1.5 bg-white/5 rounded text-xs font-mono text-gray-300">NESCAFÉ</span>
+            <span class="px-3.5 py-1.5 bg-white/5 rounded text-xs font-mono text-gray-300">NIVEA</span>
+            <span class="px-3.5 py-1.5 bg-white/5 rounded text-xs font-mono text-gray-300">TANG</span>
+            <span class="px-3.5 py-1.5 bg-white/5 rounded text-xs font-mono text-gray-300">SHOPEE</span>
+          </div>
+        </div>
+
+        <!-- Experience Timeline -->
+        <div class="space-y-6">
+          
+          <!-- Timeline Item: L'Oréal Paris 2026 -->
+          <div class="bg-brand-card neo-border-purple p-6 sm:p-8 rounded-xl relative overflow-hidden group">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-3">
+              <div class="flex items-center gap-3">
+                <span class="px-3 py-1 bg-brand-purple text-white font-mono text-xs font-bold rounded uppercase">2026</span>
+                <h3 class="font-display font-bold text-xl text-white uppercase">L'ORÉAL PARIS</h3>
+                <span class="text-xs px-2.5 py-0.5 rounded bg-brand-purple/20 text-purple-200 font-mono font-semibold" data-i18n="exp_winner_tag">🏆 VENCEDORA</span>
+              </div>
+              <span class="font-mono text-xs text-brand-purple uppercase tracking-wider font-semibold" data-i18n="exp_loreal_role">Edição de Vídeo com IA</span>
+            </div>
+            <h4 class="text-sm font-semibold text-gray-200 mb-2" data-i18n="exp_loreal_proj">Concurso Nacional Elseve - Collagen Lifter</h4>
+            <p class="text-sm text-gray-400 leading-relaxed" data-i18n="exp_loreal_desc">
+              Criação e edição de vídeo publicitário incorporando Inteligência Artificial Generativa para composição visual, animação e sincronização narrativa, conquistando o 1º lugar no concurso nacional da marca.
+            </p>
+          </div>
+
+          <!-- Timeline Item: Mondial & Aiwa 2025-2026 -->
+          <div class="bg-brand-card neo-border-purple p-6 sm:p-8 rounded-xl relative overflow-hidden group">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-3">
+              <div class="flex items-center gap-3">
+                <span class="px-3 py-1 bg-brand-purple text-white font-mono text-xs font-bold rounded uppercase">2025 - 2026</span>
+                <h3 class="font-display font-bold text-xl text-white uppercase">MONDIAL &amp; AIWA</h3>
+                <span class="text-xs px-2.5 py-0.5 rounded bg-brand-purple/20 text-purple-200 font-mono font-semibold" data-i18n="exp_winner_tag2">🏆 VENCEDORA</span>
+              </div>
+              <span class="font-mono text-xs text-brand-purple uppercase tracking-wider font-semibold" data-i18n="exp_mondial_role">Edição &amp; Criação com IA</span>
+            </div>
+            <h4 class="text-sm font-semibold text-gray-200 mb-2" data-i18n="exp_mondial_proj">Concurso Interno de Inovação e Criação</h4>
+            <p class="text-sm text-gray-400 leading-relaxed" data-i18n="exp_mondial_desc">
+              Desenvolvimento de conteúdo audiovisual impulsionado por IA Generativa para demonstração de produtos e campanhas promocionais de alto engajamento, sendo premiada no concurso de inovação.
+            </p>
+          </div>
+
+          <!-- Timeline Item: Sentimental Filme / Gloob 2021-2024 (Emmy Nominee) -->
+          <div class="bg-brand-card neo-border p-6 sm:p-8 rounded-xl relative overflow-hidden group hover:border-yellow-500/50 transition-colors">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-3">
+              <div class="flex items-center gap-3">
+                <span class="px-3 py-1 bg-white/10 text-white font-mono text-xs font-bold rounded uppercase">2021 - 2024</span>
+                <h3 class="font-display font-bold text-xl text-white uppercase">SENTIMENTAL FILME / GLOOB</h3>
+                <span class="text-xs px-2.5 py-0.5 rounded bg-yellow-500/20 text-yellow-300 font-mono font-semibold" data-i18n="exp_emmy_tag">⭐ EMMY AWARDS 2025</span>
+              </div>
+              <span class="font-mono text-xs text-gray-300 uppercase tracking-wider font-semibold" data-i18n="exp_gloob_role">Edição e Finalização</span>
+            </div>
+            <h4 class="text-sm font-semibold text-white mb-2" data-i18n="exp_gloob_proj">Projeto "Bora, o Pódio é Nosso" (Indicado ao Emmy Awards 2025)</h4>
+            <p class="text-sm text-gray-400 leading-relaxed" data-i18n="exp_gloob_desc">
+              Atuação como editora principal e finalizadora da série infanto-juvenil esportiva transmitida pelo canal Gloob/Globoplay, que alcançou reconhecimento internacional com a indicação ao Emmy Awards 2025. Assistência de ilha e finalização de dezenas de comerciais de grande porte.
+            </p>
+          </div>
+
+          <!-- Timeline Item: Amazon Prime Video & Multishow 2022 -->
+          <div class="bg-brand-card neo-border p-6 sm:p-8 rounded-xl relative overflow-hidden group">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-3">
+              <div class="flex items-center gap-3">
+                <span class="px-3 py-1 bg-white/10 text-white font-mono text-xs font-bold rounded uppercase">2022</span>
+                <h3 class="font-display font-bold text-xl text-white uppercase">AMAZON PRIME VIDEO &amp; MULTISHOW</h3>
+              </div>
+              <span class="font-mono text-xs text-gray-400 uppercase tracking-wider" data-i18n="exp_streaming_role">Edição, Finalização &amp; Color Grading</span>
+            </div>
+            <h4 class="text-sm font-semibold text-gray-200 mb-2">"Caravana das Drags" (Amazon) &amp; "Anota Aí" (Multishow)</h4>
+            <p class="text-sm text-gray-400 leading-relaxed" data-i18n="exp_streaming_desc">
+              Edição de episódios do reality show "Caravana das Drags" (Amazon Prime Video) e pós-produção completa, conformação e Color Grading para a temporada do programa de viagens "Anota Aí" no Multishow.
+            </p>
+          </div>
+
+          <!-- Timeline Item: Netflix 2019-2021 -->
+          <div class="bg-brand-card neo-border p-6 sm:p-8 rounded-xl relative overflow-hidden group">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-3">
+              <div class="flex items-center gap-3">
+                <span class="px-3 py-1 bg-white/10 text-white font-mono text-xs font-bold rounded uppercase">2019 - 2021</span>
+                <h3 class="font-display font-bold text-xl text-white uppercase">NETFLIX</h3>
+              </div>
+              <span class="font-mono text-xs text-gray-400 uppercase tracking-wider" data-i18n="exp_netflix_role">Edição de Especiais de Stand-Up Comedy</span>
+            </div>
+            <h4 class="text-sm font-semibold text-gray-200 mb-2">Thiago Ventura, Yuri Marçal, Afonso Padilha, Clarice Falcão</h4>
+            <p class="text-sm text-gray-400 leading-relaxed" data-i18n="exp_netflix_desc">
+              Edição multicâmera, refinamento de timing cômico e entrega nos padrões técnicos internacionais da Netflix para os maiores especiais de comédia do Brasil.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================================================
+         SEÇÃO 5: FORMAÇÃO ACADÊMICA & CERTIFICAÇÕES
+         ================================================== -->
+    <section id="formacao" class="py-20 md:py-28 relative border-b border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="mb-14">
+          <span class="font-mono text-xs font-bold text-brand-purple uppercase tracking-[0.2em] block mb-2" data-i18n="edu_tag">BASE EDUCACIONAL</span>
+          <h2 class="font-display font-black text-3xl sm:text-5xl uppercase tracking-tight text-white mb-4" data-i18n="edu_title">
+            FORMAÇÃO &amp; CERTIFICAÇÕES
+          </h2>
+          <p class="text-gray-400 max-w-2xl text-base" data-i18n="edu_desc">
+            Aliança estratégica entre a sólida formação cinematográfica e a vanguarda da Ciência da Computação e Análise de Dados.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- Card 1: Ciência da Computação -->
+          <div class="bg-brand-card neo-border-purple p-6 rounded-xl relative flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="px-2.5 py-1 bg-brand-purple/20 text-purple-300 font-mono text-xs font-bold rounded">2024 – 2028</span>
+                <span class="font-mono text-xs text-brand-purple font-semibold" data-i18n="edu_status_current">EM ANDAMENTO</span>
+              </div>
+              <h3 class="font-display font-bold text-lg text-white uppercase mb-2" data-i18n="edu_cs_title">
+                Bacharelado em Ciência da Computação
+              </h3>
+              <p class="text-xs text-gray-300 font-medium mb-3">Universidade Anhembi Morumbi</p>
+              <p class="text-xs text-gray-400 leading-relaxed" data-i18n="edu_cs_desc">
+                Foco em algoritmos, estruturas de dados, inteligência artificial, bancos de dados e engenharia de software aplicada a processamento multimídia.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2: Especialização Data Science -->
+          <div class="bg-brand-card neo-border-purple p-6 rounded-xl relative flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="px-2.5 py-1 bg-brand-purple/20 text-purple-300 font-mono text-xs font-bold rounded">2025 – 2026</span>
+                <span class="font-mono text-xs text-emerald-400 font-semibold">+130 HORAS</span>
+              </div>
+              <h3 class="font-display font-bold text-lg text-white uppercase mb-2" data-i18n="edu_ds_title">
+                Especialização em Data Science
+              </h3>
+              <p class="text-xs text-gray-300 font-medium mb-3">Alura + Oracle Next Education</p>
+              <p class="text-xs text-gray-400 leading-relaxed" data-i18n="edu_ds_desc">
+                Machine Learning, análise estatística com Python, Pandas, Scikit-Learn, SQL, visualização com Looker Studio e pipelines de dados.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3: Oracle OCI Certification -->
+          <div class="bg-brand-card neo-border-purple p-6 rounded-xl relative flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="px-2.5 py-1 bg-brand-purple/20 text-purple-300 font-mono text-xs font-bold rounded">2026</span>
+                <span class="font-mono text-xs text-brand-purple font-semibold" data-i18n="edu_cert_tag">CERTIFICAÇÃO OFICIAL</span>
+              </div>
+              <h3 class="font-display font-bold text-lg text-white uppercase mb-2" data-i18n="edu_oci_title">
+                OCI Certified Foundations Associate
+              </h3>
+              <p class="text-xs text-gray-300 font-medium mb-3">Oracle Cloud Infrastructure</p>
+              <p class="text-xs text-gray-400 leading-relaxed" data-i18n="edu_oci_desc">
+                Fundamentos de computação em nuvem, bancos de dados autônomos, arquiteturas seguras e serviços de IA na infraestrutura da Oracle.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4: Cinema -->
+          <div class="bg-brand-card neo-border p-6 rounded-xl relative flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="px-2.5 py-1 bg-white/10 text-white font-mono text-xs font-bold rounded">2010 – 2013</span>
+                <span class="font-mono text-xs text-gray-400">GRADUAÇÃO</span>
+              </div>
+              <h3 class="font-display font-bold text-lg text-white uppercase mb-2" data-i18n="edu_cinema_title">
+                Bacharelado em Cinema
+              </h3>
+              <p class="text-xs text-gray-300 font-medium mb-3">Universidade Anhembi Morumbi</p>
+              <p class="text-xs text-gray-400 leading-relaxed" data-i18n="edu_cinema_desc">
+                Formação completa em narrativa visual, montagem, direção, dramaturgia e história do cinema mundial.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 5 & 6: Cursos de Extensão & Especialização Audiovisual -->
+          <div class="bg-brand-card neo-border p-6 rounded-xl relative lg:col-span-2 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="px-2.5 py-1 bg-white/10 text-white font-mono text-xs font-bold rounded">ESPECIALIZAÇÕES</span>
+                <span class="font-mono text-xs text-gray-400" data-i18n="edu_ext_tag">EXTENSÕES TÉCNICAS</span>
+              </div>
+              <h3 class="font-display font-bold text-lg text-white uppercase mb-3" data-i18n="edu_ext_title">
+                Cursos de Extensão e Imersão Cinematográfica
+              </h3>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                <div class="p-2.5 bg-white/5 rounded neo-border">
+                  <span class="font-bold text-white block">Reality Show (2021)</span>
+                  <span class="text-gray-400">Instituto de Cinema</span>
+                </div>
+                <div class="p-2.5 bg-white/5 rounded neo-border">
+                  <span class="font-bold text-white block">After Effects Avançado (2020)</span>
+                  <span class="text-gray-400">Domestika</span>
+                </div>
+                <div class="p-2.5 bg-white/5 rounded neo-border">
+                  <span class="font-bold text-white block">Color Grading Avançado (2019)</span>
+                  <span class="text-gray-400">Instituto de Cinema</span>
+                </div>
+                <div class="p-2.5 bg-white/5 rounded neo-border">
+                  <span class="font-bold text-white block">Color Grading (2013)</span>
+                  <span class="text-gray-400">Escola Inspiratorium</span>
+                </div>
+                <div class="p-2.5 bg-white/5 rounded neo-border">
+                  <span class="font-bold text-white block">Direção de Fotografia (2012)</span>
+                  <span class="text-gray-400">Academia Internacional de Cinema (AIC)</span>
+                </div>
+                <div class="p-2.5 bg-white/5 rounded neo-border">
+                  <span class="font-bold text-white block">Fotografia Avançada (2009)</span>
+                  <span class="text-gray-400">Escola Primelight</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================================================
+         SEÇÃO 6: PROJETOS / PROJECTS (DATA SCIENCE & IA)
+         ================================================== -->
+    <section id="projetos" class="py-20 md:py-28 bg-brand-dark relative border-b border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-4">
+          <div>
+            <span class="font-mono text-xs font-bold text-brand-purple uppercase tracking-[0.2em] block mb-2" data-i18n="proj_tag">REPOSITÓRIOS &amp; DESENVOLVIMENTO</span>
+            <h2 class="font-display font-black text-3xl sm:text-5xl uppercase tracking-tight text-white" data-i18n="proj_title">
+              PROJETOS DE DADOS &amp; IA
+            </h2>
+          </div>
+          <a href="https://github.com/deboracguerra" target="_blank" rel="noopener noreferrer" class="font-mono text-xs text-brand-purple hover:text-white uppercase tracking-wider flex items-center gap-1.5 group">
+            <span data-i18n="proj_view_all">Ver todos no GitHub</span>
+            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- Project 1 -->
+          <div class="bg-brand-card neo-border rounded-xl p-6 hover:border-brand-purple transition-all duration-300 flex flex-col justify-between group">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="flex items-center gap-2 font-mono text-xs text-brand-purple">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/></svg>
+                  <span>REPO // PYTHON</span>
+                </div>
+                <span class="font-mono text-[10px] text-gray-400">DATA SCIENCE</span>
+              </div>
+              <h3 class="font-display font-bold text-lg text-white uppercase group-hover:text-brand-purple transition-colors mb-2" data-i18n="proj_1_title">
+                Pipeline de Análise e Metadados de Vídeo
+              </h3>
+              <p class="text-xs text-gray-400 leading-relaxed mb-6" data-i18n="proj_1_desc">
+                Automação e extração de métricas de arquivos de vídeo, segmentação de cenas e análise exploratória de dados utilizando Python e bibliotecas especializadas.
+              </p>
+            </div>
+            <div>
+              <div class="flex flex-wrap gap-1.5 mb-5 font-mono text-[10px] text-gray-400">
+                <span class="px-2 py-0.5 bg-white/5 rounded">Python</span>
+                <span class="px-2 py-0.5 bg-white/5 rounded">Pandas</span>
+                <span class="px-2 py-0.5 bg-white/5 rounded">OpenCV</span>
+                <span class="px-2 py-0.5 bg-white/5 rounded">ETL</span>
+              </div>
+              <a href="https://github.com/deboracguerra" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 bg-white/5 hover:bg-brand-purple text-white font-mono text-xs uppercase tracking-wider rounded transition-colors flex items-center justify-center gap-2 neo-border">
+                <span data-i18n="btn_view_github">Ver no GitHub</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="bg-brand-card neo-border rounded-xl p-6 hover:border-brand-purple transition-all duration-300 flex flex-col justify-between group">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="flex items-center gap-2 font-mono text-xs text-brand-purple">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/></svg>
+                  <span>REPO // MACHINE LEARNING</span>
+                </div>
+                <span class="font-mono text-[10px] text-gray-400">ORACLE ALURA</span>
+              </div>
+              <h3 class="font-display font-bold text-lg text-white uppercase group-hover:text-brand-purple transition-colors mb-2" data-i18n="proj_2_title">
+                Modelos Preditivos &amp; Dashboards Analíticos
+              </h3>
+              <p class="text-xs text-gray-400 leading-relaxed mb-6" data-i18n="proj_2_desc">
+                Classificação preditiva, análise de churn e visualização de dados estratégicos integrados ao Google Looker Studio e MySQL.
+              </p>
+            </div>
+            <div>
+              <div class="flex flex-wrap gap-1.5 mb-5 font-mono text-[10px] text-gray-400">
+                <span class="px-2 py-0.5 bg-white/5 rounded">Scikit-Learn</span>
+                <span class="px-2 py-0.5 bg-white/5 rounded">SQL</span>
+                <span class="px-2 py-0.5 bg-white/5 rounded">Looker Studio</span>
+                <span class="px-2 py-0.5 bg-white/5 rounded">NumPy</span>
+              </div>
+              <a href="https://github.com/deboracguerra" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 bg-white/5 hover:bg-brand-purple text-white font-mono text-xs uppercase tracking-wider rounded transition-colors flex items-center justify-center gap-2 neo-border">
+                <span data-i18n="btn_view_github">Ver no GitHub</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="bg-brand-card neo-border rounded-xl p-6 hover:border-brand-purple transition-all duration-300 flex flex-col justify-between group">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="flex items-center gap-2 font-mono text-xs text-brand-purple">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/></svg>
+                  <span>WORKFLOW // GENERATIVE AI</span>
+                </div>
+                <span class="font-mono text-[10px] text-purple-300">PREMIADO 2026</span>
+              </div>
+              <h3 class="font-display font-bold text-lg text-white uppercase group-hover:text-brand-purple transition-colors mb-2" data-i18n="proj_3_title">
+                Geração de Vídeo Publicitário com IA
+              </h3>
+              <p class="text-xs text-gray-400 leading-relaxed mb-6" data-i18n="proj_3_desc">
+                Metodologia estruturada de prompts visuais, animação neural, controle de consistência e montagem final para campanhas de alto impacto.
+              </p>
+            </div>
+            <div>
+              <div class="flex flex-wrap gap-1.5 mb-5 font-mono text-[10px] text-gray-400">
+                <span class="px-2 py-0.5 bg-white/5 rounded">Gen-AI Video</span>
+                <span class="px-2 py-0.5 bg-white/5 rounded">Premiere Pro</span>
+                <span class="px-2 py-0.5 bg-white/5 rounded">Photoshop</span>
+                <span class="px-2 py-0.5 bg-white/5 rounded">Color Grading</span>
+              </div>
+              <a href="https://github.com/deboracguerra" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 bg-white/5 hover:bg-brand-purple text-white font-mono text-xs uppercase tracking-wider rounded transition-colors flex items-center justify-center gap-2 neo-border">
+                <span data-i18n="btn_view_github">Ver no GitHub</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================================================
+       SEÇÃO 7: FOOTER / RODAPÉ EM BLOCO ROXO ELÉTRICO (#8A2BE2)
+       ================================================== -->
+  <footer id="contato" class="bg-[#8A2BE2] text-white py-16 sm:py-20 relative z-20 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Left: Huge Callout (Col 7) -->
+        <div class="lg:col-span-7">
+          <span class="font-mono text-xs text-purple-200 uppercase tracking-[0.25em] font-bold block mb-3" data-i18n="footer_tag">
+            VAMOS CRIAR ALGO EXTRAORDINÁRIO?
+          </span>
+          <h2 class="font-display font-black text-4xl sm:text-6xl uppercase tracking-tight text-white leading-none mb-6" data-i18n="footer_title">
+            VAMOS TRABALHAR JUNTOS!
+          </h2>
+          <p class="text-purple-100 text-base sm:text-lg max-w-xl leading-relaxed" data-i18n="footer_desc">
+            Disponível para pós-produção audiovisual, projetos de edição/finalização com Inteligência Artificial e iniciativas em Ciência de Dados.
+          </p>
+        </div>
+
+        <!-- Right: Action Cards & Direct Channels (Col 5) -->
+        <div class="lg:col-span-5 flex flex-col gap-3">
+          
+          <!-- Email Button -->
+          <a href="mailto:deboracguerra@gmail.com" class="p-4 bg-white text-black hover:bg-gray-100 rounded-xl transition-all duration-300 flex items-center justify-between group shadow-lg" id="footer-email-btn">
+            <div class="flex items-center gap-3.5">
+              <div class="w-10 h-10 rounded-lg bg-black text-white flex items-center justify-center">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              </div>
+              <div>
+                <span class="text-[10px] font-mono uppercase tracking-wider text-gray-500 font-bold block" data-i18n="footer_email_label">ENVIAR E-MAIL</span>
+                <span class="font-mono text-xs sm:text-sm font-bold text-black">deboracguerra@gmail.com</span>
+              </div>
+            </div>
+            <svg class="w-5 h-5 text-gray-400 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </a>
+
+          <!-- WhatsApp Button -->
+          <a href="https://wa.me/5511964844975" target="_blank" rel="noopener noreferrer" class="p-4 bg-black/20 hover:bg-black/30 border border-white/20 text-white rounded-xl transition-all duration-300 flex items-center justify-between group" id="footer-whatsapp-btn">
+            <div class="flex items-center gap-3.5">
+              <div class="w-10 h-10 rounded-lg bg-emerald-500 text-white flex items-center justify-center shadow-md">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.031 0C5.405 0 .013 5.393.013 12.02c0 2.115.549 4.18 1.596 6.002L0 24l6.135-1.579c1.761.96 3.754 1.467 5.896 1.467 6.626 0 12.018-5.393 12.018-12.02C24.049 5.393 18.657 0 12.031 0zm0 22.023c-1.85 0-3.665-.497-5.253-1.442l-.377-.224-3.905 1.006 1.042-3.807-.246-.391c-1.037-1.65-1.586-3.559-1.586-5.522 0-5.528 4.498-10.026 10.03-10.026 5.532 0 10.03 4.498 10.03 10.026 0 5.528-4.498 10.026-10.03 10.026zm5.492-7.533c-.301-.151-1.782-.879-2.058-.98-.276-.1-.476-.151-.677.151-.2.301-.778.98-.954 1.18-.176.2-.351.226-.652.075-.301-.151-1.272-.469-2.423-1.496-.895-.798-1.5-1.784-1.676-2.085-.176-.301-.019-.464.132-.614.136-.135.301-.351.451-.527.151-.176.2-.301.301-.502.1-.2.05-.376-.025-.527-.075-.151-.677-1.633-.928-2.235-.245-.587-.493-.507-.677-.516l-.578-.01c-.2 0-.527.075-.803.376s-1.054 1.03-1.054 2.511c0 1.482 1.079 2.913 1.23 3.114.151.2 2.124 3.243 5.145 4.549.719.311 1.28.497 1.718.636.722.229 1.378.197 1.898.119.579-.087 1.782-.728 2.033-1.431.251-.703.251-1.305.176-1.431-.076-.126-.276-.201-.577-.352z"/></svg>
+              </div>
+              <div>
+                <span class="text-[10px] font-mono uppercase tracking-wider text-purple-200 font-bold block" data-i18n="footer_whatsapp_label">WHATSAPP DIRETO</span>
+                <span class="font-mono text-xs sm:text-sm font-bold text-white">+55 (11) 96484-4975</span>
+              </div>
+            </div>
+            <svg class="w-5 h-5 text-purple-200 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </a>
+
+          <!-- Social Links Strip -->
+          <div class="flex items-center gap-2 pt-2">
+            <a href="https://www.linkedin.com/in/d%C3%A9bora-guerra-534b80a6/" target="_blank" rel="noopener noreferrer" class="flex-1 py-3 bg-black/20 hover:bg-black/30 border border-white/20 rounded-lg text-center font-mono text-xs font-bold text-white uppercase tracking-wider transition-colors flex items-center justify-center gap-1.5">
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/deboracguerra" target="_blank" rel="noopener noreferrer" class="flex-1 py-3 bg-black/20 hover:bg-black/30 border border-white/20 rounded-lg text-center font-mono text-xs font-bold text-white uppercase tracking-wider transition-colors flex items-center justify-center gap-1.5">
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.youtube.com/watch?v=_buhS1ynzO8" target="_blank" rel="noopener noreferrer" class="flex-1 py-3 bg-black/20 hover:bg-black/30 border border-white/20 rounded-lg text-center font-mono text-xs font-bold text-white uppercase tracking-wider transition-colors flex items-center justify-center gap-1.5">
+              <span>Showreel</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Bottom Credits -->
+      <div class="mt-14 pt-8 border-t border-white/20 flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-xs text-purple-200">
+        <div data-i18n="footer_copy">
+          © 2026 Débora Guerra. Todos os direitos reservados.
+        </div>
+        <div class="flex items-center gap-4">
+          <span data-i18n="footer_loc">São Paulo, Brasil 🇧🇷</span>
+          <span>•</span>
+          <a href="#hero" class="hover:text-white underline underline-offset-4" data-i18n="footer_back_top">Voltar ao topo ↑</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==================================================
+       INLINE PURE JAVASCRIPT: I18N ENGINE & UI LOGIC
+       ================================================== -->
+  <script>
+    // i18n Translation Dictionary (PT & EN)
+    const translations = {
+      pt: {
+        nav_about: "Sobre",
+        nav_reel: "Showreel",
+        nav_skills: "Habilidades",
+        nav_experience: "Experiência",
+        nav_education: "Formação",
+        nav_projects: "Projetos",
+        nav_contact: "Contato",
+        
+        hero_status: "DISPONÍVEL PARA PROJETOS & DESAFIOS // 2026",
+        hero_subtitle: "PÓS-PRODUÇÃO DE VÍDEO | EDIÇÃO, FINALIZAÇÃO & DATA SCIENCE",
+        badge_emmy_title: "EMMY AWARDS 2025",
+        badge_emmy_sub: "Editora Indicada",
+        badge_loreal_title: "L'ORÉAL PARIS 2026",
+        badge_loreal_sub: "Vencedora Edição c/ IA",
+        badge_mondial_title: "MONDIAL & AIWA 2026",
+        badge_mondial_sub: "Vencedora Inovação IA",
+        hero_bio: "Profissional com 14 anos de sólida experiência em edição e finalização de vídeos para gigantes globais como Netflix, HBO, Amazon Prime Video e Globo. Editora do projeto \"Bora, o Pódio é Nosso\" (indicado ao EMMY AWARDS 2025). Vencedora de concursos nacionais e corporativos de edição com Inteligência Artificial na Mondial (2026) e L'Oréal Paris (2026). Atualmente em expansão contínua para Ciência de Dados e IA como graduanda em Ciência da Computação.",
+        
+        btn_watch_reel: "Ver Showreel",
+        btn_whatsapp: "WhatsApp",
+        btn_view_github: "Ver no GitHub",
+        
+        metric_years: "Anos em Pós-Produção",
+        metric_brands: "Grandes Marcas Atendidas",
+        metric_emmy: "Indicação ao EMMY 2025",
+        metric_awards: "Prêmios de IA em 2026",
+        
+        reel_tag: "DESTAQUE AUDIOVISUAL",
+        reel_title: "SHOWREEL & TRABALHOS EM VÍDEO",
+        reel_desc: "Edição rítmica, narrativa documental, color grading cinematográfico e finalização de alta precisão.",
+        reel_main_header: "01 // SHOWREEL PRINCIPAL (CINEMA, TV & STREAMING)",
+        reel_footer_note: "Trabalhos em Streaming, Publicidade & Reality Shows",
+        btn_open_youtube: "Abrir no YouTube",
+        reel_tiktok_header: "02 // PORTFÓLIO LINGUAGEM DE TIKTOK & REDES SOCIAIS",
+        reel_tiktok_title: "Portfólio de Linguagem de TikTok & Formatos Verticais",
+        reel_tiktok_desc: "Edição dinâmica, ritmo acelerado, retenção de atenção, cortes rítmicos, legendagem criativa e adaptação para o ecossistema digital.",
+        btn_open_youtube_tiktok: "Ver no YouTube",
+        
+        skills_tag: "EXPERTISE TÉCNICA",
+        skills_title: "HABILIDADES & TECH STACK",
+        skills_desc: "A convergência entre o rigor da pós-produção audiovisual de alto nível e as metodologias modernas de Inteligência Artificial e Ciência de Dados.",
+        skill_cat_1: "Softwares de Vídeo",
+        skill_cat_1_sub: "Edição offline, montagem, conformação, correção de cor e finalização de master.",
+        skill_cat_2: "Criação & IA Generativa",
+        skill_cat_2_sub: "Workflows premiados de geração de vídeo, animação neural, dublagem e direção de fotografia.",
+        skill_cat_3: "Dados & Programação",
+        skill_cat_3_sub: "Manipulação analítica, modelagem preditiva, automação e arquitetura cloud.",
+        skill_cat_4: "Ferramentas & BI",
+        skill_cat_4_sub: "Versionamento colaborativo, dashboards analíticos e organização operacional.",
+        
+        exp_tag: "TRAJETÓRIA PROFISSIONAL",
+        exp_title: "EXPERIÊNCIA & CLIENTES DE DESTAQUE",
+        exp_desc: "Trabalhos realizados para os maiores serviços de streaming, canais de TV e marcas multinacionais.",
+        brands_header: "MARCAS E PLAYERS ATENDIDOS",
+        exp_winner_tag: "🏆 VENCEDORA",
+        exp_winner_tag2: "🏆 VENCEDORA",
+        exp_emmy_tag: "⭐ EMMY AWARDS 2025",
+        exp_loreal_role: "Edição de Vídeo com IA",
+        exp_loreal_proj: "Concurso Nacional Elseve - Collagen Lifter",
+        exp_loreal_desc: "Criação e edição de vídeo publicitário incorporando Inteligência Artificial Generativa para composição visual, animação e sincronização narrativa, conquistando o 1º lugar no concurso nacional da marca.",
+        exp_mondial_role: "Edição & Criação com IA",
+        exp_mondial_proj: "Concurso Interno de Inovação e Criação",
+        exp_mondial_desc: "Desenvolvimento de conteúdo audiovisual impulsionado por IA Generativa para demonstração de produtos e campanhas promocionais de alto engajamento, sendo premiada no concurso de inovação.",
+        exp_gloob_role: "Edição e Finalização",
+        exp_gloob_proj: "Projeto \"Bora, o Pódio é Nosso\" (Indicado ao Emmy Awards 2025)",
+        exp_gloob_desc: "Atuação como editora principal e finalizadora da série infanto-juvenil esportiva transmitida pelo canal Gloob/Globoplay, que alcançou reconhecimento internacional com a indicação ao Emmy Awards 2025. Assistência de ilha e finalização de dezenas de comerciais de grande porte.",
+        exp_streaming_role: "Edição, Finalização & Color Grading",
+        exp_streaming_desc: "Edição de episódios do reality show \"Caravana das Drags\" (Amazon Prime Video) e pós-produção completa, conformação e Color Grading para a temporada do programa de viagens \"Anota Aí\" no Multishow.",
+        exp_netflix_role: "Edição de Especiais de Stand-Up Comedy",
+        exp_netflix_desc: "Edição multicâmera, refinamento de timing cômico e entrega nos padrões técnicos internacionais da Netflix para os maiores especiais de comédia do Brasil.",
+        
+        edu_tag: "BASE EDUCACIONAL",
+        edu_title: "FORMAÇÃO & CERTIFICAÇÕES",
+        edu_desc: "Aliança estratégica entre a sólida formação cinematográfica e a vanguarda da Ciência da Computação e Análise de Dados.",
+        edu_status_current: "EM ANDAMENTO",
+        edu_cs_title: "Bacharelado em Ciência da Computação",
+        edu_cs_desc: "Foco em algoritmos, estruturas de dados, inteligência artificial, bancos de dados e engenharia de software aplicada a processamento multimídia.",
+        edu_ds_title: "Especialização em Data Science",
+        edu_ds_desc: "Machine Learning, análise estatística com Python, Pandas, Scikit-Learn, SQL, visualização com Looker Studio e pipelines de dados.",
+        edu_cert_tag: "CERTIFICAÇÃO OFICIAL",
+        edu_oci_title: "OCI Certified Foundations Associate",
+        edu_oci_desc: "Fundamentos de computação em nuvem, bancos de dados autônomos, arquiteturas seguras e serviços de IA na infraestrutura da Oracle.",
+        edu_cinema_title: "Bacharelado em Cinema",
+        edu_cinema_desc: "Formação completa em narrativa visual, montagem, direção, dramaturgia e história do cinema mundial.",
+        edu_ext_tag: "EXTENSÕES TÉCNICAS",
+        edu_ext_title: "Cursos de Extensão e Imersão Cinematográfica",
+        
+        proj_tag: "REPOSITÓRIOS & DESENVOLVIMENTO",
+        proj_title: "PROJETOS DE DADOS & IA",
+        proj_view_all: "Ver todos no GitHub",
+        proj_1_title: "Pipeline de Análise e Metadados de Vídeo",
+        proj_1_desc: "Automação e extração de métricas de arquivos de vídeo, segmentação de cenas e análise exploratória de dados utilizando Python e bibliotecas especializadas.",
+        proj_2_title: "Modelos Preditivos & Dashboards Analíticos",
+        proj_2_desc: "Classificação preditiva, análise de churn e visualização de dados estratégicos integrados ao Google Looker Studio e MySQL.",
+        proj_3_title: "Geração de Vídeo Publicitário com IA",
+        proj_3_desc: "Metodologia estruturada de prompts visuais, animação neural, controle de consistência e montagem final para campanhas de alto impacto.",
+        
+        footer_tag: "VAMOS CRIAR ALGO EXTRAORDINÁRIO?",
+        footer_title: "VAMOS TRABALHAR JUNTOS!",
+        footer_desc: "Disponível para pós-produção audiovisual, projetos de edição/finalização com Inteligência Artificial e iniciativas em Ciência de Dados.",
+        footer_email_label: "ENVIAR E-MAIL",
+        footer_whatsapp_label: "WHATSAPP DIRETO",
+        footer_copy: "© 2026 Débora Guerra. Todos os direitos reservados.",
+        footer_loc: "São Paulo, Brasil 🇧🇷",
+        footer_back_top: "Voltar ao topo ↑"
+      },
+      en: {
+        nav_about: "About",
+        nav_reel: "Showreel",
+        nav_skills: "Skills",
+        nav_experience: "Experience",
+        nav_education: "Education",
+        nav_projects: "Projects",
+        nav_contact: "Contact",
+        
+        hero_status: "AVAILABLE FOR PROJECTS & CHALLENGES // 2026",
+        hero_subtitle: "VIDEO POST-PRODUCTION | EDITING, FINISHING & DATA SCIENCE",
+        badge_emmy_title: "EMMY AWARDS 2025",
+        badge_emmy_sub: "Nominated Editor",
+        badge_loreal_title: "L'ORÉAL PARIS 2026",
+        badge_loreal_sub: "AI Video Editing Winner",
+        badge_mondial_title: "MONDIAL & AIWA 2026",
+        badge_mondial_sub: "AI Innovation Winner",
+        hero_bio: "Professional with 14 years of solid experience in video editing and post-production finishing for global entertainment giants including Netflix, HBO, Amazon Prime Video, and Globo. Lead editor of \"Bora, o Pódio é Nosso\" (nominated for the EMMY AWARDS 2025). Winner of national and corporate AI Video Editing competitions at Mondial (2026) and L'Oréal Paris (2026). Currently expanding into Data Science and Artificial Intelligence as a Computer Science undergraduate.",
+        
+        btn_watch_reel: "Watch Showreel",
+        btn_whatsapp: "WhatsApp",
+        btn_view_github: "View on GitHub",
+        
+        metric_years: "Years in Post-Production",
+        metric_brands: "Major Global Brands",
+        metric_emmy: "EMMY 2025 Nomination",
+        metric_awards: "AI Awards in 2026",
+        
+        reel_tag: "AUDIOVISUAL HIGHLIGHT",
+        reel_title: "SHOWREEL & VIDEO WORK",
+        reel_desc: "Rhythmic pacing, documentary storytelling, cinematic color grading, and high-precision finishing.",
+        reel_main_header: "01 // MAIN SHOWREEL (CINEMA, TV & STREAMING)",
+        reel_footer_note: "Streaming, Commercials & Reality Show Portfolios",
+        btn_open_youtube: "Open on YouTube",
+        reel_tiktok_header: "02 // TIKTOK & SOCIAL MEDIA STYLE PORTFOLIO",
+        reel_tiktok_title: "TikTok & Short-Form Social Media Portfolio",
+        reel_tiktok_desc: "Fast-paced editing, rhythmic cuts, viewer retention strategies, dynamic captions, and social creator workflows.",
+        btn_open_youtube_tiktok: "Watch on YouTube",
+        
+        skills_tag: "TECHNICAL EXPERTISE",
+        skills_title: "SKILLS & TECH STACK",
+        skills_desc: "The seamless convergence of high-end audiovisual post-production discipline with cutting-edge AI and Data Science methodologies.",
+        skill_cat_1: "Video Software",
+        skill_cat_1_sub: "Offline editing, assembly, conformation, color grading, and master deliverable finishing.",
+        skill_cat_2: "Creation & Generative AI",
+        skill_cat_2_sub: "Award-winning generative video pipelines, neural animation, voice synthesis, and cinematography.",
+        skill_cat_3: "Data & Programming",
+        skill_cat_3_sub: "Analytical manipulation, predictive modeling, automation scripts, and cloud infrastructure.",
+        skill_cat_4: "Tools & BI",
+        skill_cat_4_sub: "Collaborative version control, analytical BI dashboards, and project organization.",
+        
+        exp_tag: "PROFESSIONAL CAREER",
+        exp_title: "EXPERIENCE & FEATURED CLIENTS",
+        exp_desc: "Delivered premium work for major global streaming platforms, television networks, and Fortune 500 brands.",
+        brands_header: "FEATURED BRANDS & PLAYERS",
+        exp_winner_tag: "🏆 WINNER",
+        exp_winner_tag2: "🏆 WINNER",
+        exp_emmy_tag: "⭐ EMMY AWARDS 2025",
+        exp_loreal_role: "AI Video Editing & Creation",
+        exp_loreal_proj: "National Contest Elseve - Collagen Lifter",
+        exp_loreal_desc: "Directed and edited promotional video integrating Generative AI for visual composition, neural animation, and rhythmic pacing, winning 1st place in the brand's national competition.",
+        exp_mondial_role: "AI Video & Content Creation",
+        exp_mondial_proj: "Internal Innovation & AI Contest",
+        exp_mondial_desc: "Authored generative audiovisual narratives for product showcasing and high-impact digital campaigns, awarded top honors in corporate innovation.",
+        exp_gloob_role: "Editing & Post-Production Finishing",
+        exp_gloob_proj: "Project \"Bora, o Pódio é Nosso\" (EMMY AWARDS 2025 Nominee)",
+        exp_gloob_desc: "Lead editor and post-finisher for the youth sports docuseries on Gloob / Globoplay, earning prestigious global recognition with an Emmy Awards 2025 nomination.",
+        exp_streaming_role: "Editing, Finishing & Color Grading",
+        exp_streaming_desc: "Edited episodes of \"Caravana das Drags\" (Amazon Prime Video) and executed complete conform and color grading for the travel series \"Anota Aí\" on Multishow.",
+        exp_netflix_role: "Stand-Up Comedy Specials Editing",
+        exp_netflix_desc: "Multi-camera editing, comedic timing optimization, and high-spec mastering adhering to Netflix global delivery standards for Brazil's premier comedy specials.",
+        
+        edu_tag: "EDUCATIONAL BACKGROUND",
+        edu_title: "EDUCATION & CERTIFICATIONS",
+        edu_desc: "A strategic synergy combining comprehensive cinematic foundations with modern Computer Science and Data Analytics.",
+        edu_status_current: "IN PROGRESS",
+        edu_cs_title: "B.S. in Computer Science",
+        edu_cs_desc: "Core algorithms, data structures, artificial intelligence, relational databases, and multimedia software engineering.",
+        edu_ds_title: "Data Science Specialization",
+        edu_ds_desc: "Machine Learning, statistical analysis with Python, Pandas, Scikit-Learn, SQL, Looker Studio BI, and ETL pipelines.",
+        edu_cert_tag: "OFFICIAL CERTIFICATION",
+        edu_oci_title: "OCI Certified Foundations Associate",
+        edu_oci_desc: "Cloud computing architecture, autonomous databases, enterprise security, and Oracle Cloud AI services.",
+        edu_cinema_title: "B.A. in Cinema & Filmmaking",
+        edu_cinema_desc: "In-depth visual storytelling, editing theory, directing, cinematography, and world film history.",
+        edu_ext_tag: "TECHNICAL EXTENSIONS",
+        edu_ext_title: "Cinematic & Technical Extension Courses",
+        
+        proj_tag: "REPOSITORIES & DEVELOPMENT",
+        proj_title: "DATA SCIENCE & AI PROJECTS",
+        proj_view_all: "View all on GitHub",
+        proj_1_title: "Video Metadata & Feature Extraction Pipeline",
+        proj_1_desc: "Automated video asset metric extraction, computer vision scene segmentation, and exploratory data analysis in Python.",
+        proj_2_title: "Predictive Models & Strategic Dashboards",
+        proj_2_desc: "Customer churn prediction, classification modeling, and KPI interactive visualizations in Looker Studio & MySQL.",
+        proj_3_title: "Generative AI Video Production Pipeline",
+        proj_3_desc: "Structured prompt engineering, neural video synthesis, consistency rigging, and post-production color assembly.",
+        
+        footer_tag: "READY TO CREATE SOMETHING EXTRAORDINARY?",
+        footer_title: "LET'S WORK TOGETHER!",
+        footer_desc: "Available for premium audiovisual post-production, AI-augmented video editing workflows, and Data Science initiatives.",
+        footer_email_label: "SEND EMAIL",
+        footer_whatsapp_label: "DIRECT WHATSAPP",
+        footer_copy: "© 2026 Débora Guerra. All rights reserved.",
+        footer_loc: "São Paulo, Brazil 🇧🇷",
+        footer_back_top: "Back to top ↑"
+      }
+    };
+
+    let currentLang = 'pt';
+
+    function setLanguage(lang) {
+      if (!translations[lang]) return;
+      currentLang = lang;
+      localStorage.setItem('dg_portfolio_lang', lang);
+
+      // Update HTML lang attribute
+      document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
+
+      // Update all translatable elements
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[lang][key]) {
+          el.textContent = translations[lang][key];
+        }
+      });
+
+      // Update Button Styles
+      const btnPt = document.getElementById('lang-btn-pt');
+      const btnEn = document.getElementById('lang-btn-en');
+
+      if (lang === 'pt') {
+        btnPt.className = 'px-2.5 py-1 text-xs font-mono font-bold rounded transition-all duration-200 bg-brand-purple text-white shadow-sm';
+        btnEn.className = 'px-2.5 py-1 text-xs font-mono font-bold rounded transition-all duration-200 text-gray-400 hover:text-white';
+      } else {
+        btnEn.className = 'px-2.5 py-1 text-xs font-mono font-bold rounded transition-all duration-200 bg-brand-purple text-white shadow-sm';
+        btnPt.className = 'px-2.5 py-1 text-xs font-mono font-bold rounded transition-all duration-200 text-gray-400 hover:text-white';
+      }
+    }
+
+    // Toggle Mobile Navigation Drawer
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      if (menu) {
+        menu.classList.toggle('hidden');
+      }
+    }
+
+    // Initialize on Page Load
+    document.addEventListener('DOMContentLoaded', () => {
+      const savedLang = localStorage.getItem('dg_portfolio_lang') || 'pt';
+      setLanguage(savedLang);
+    });
+  </script>
+</body>
+</html>
