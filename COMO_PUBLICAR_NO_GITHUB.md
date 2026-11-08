@@ -1,74 +1,50 @@
-# GUIA: COMO ABRIR NO WINRAR E PUBLICAR NO GITHUB PAGES
+# GUIA DEFINITIVO: PUBLICAR NO GITHUB PAGES SEM TELA BRANCA
 
-Este projeto foi construído com **React, TypeScript, Vite e Tailwind CSS**, otimizado para execução local, hospedagem gratuita no **GitHub Pages**, Vercel ou Netlify, além de permitir extração direta pelo **WinRAR** no Windows.
+## ⚠️ Por que a tela ficava branca antes?
+Navegadores de internet (Chrome, Safari, Edge) e o GitHub Pages **não conseguem executar arquivos TypeScript (`.tsx`) diretamente** sem compilação. Quando os arquivos brutos de desenvolvimento eram enviados diretamente ao GitHub, o navegador tentava carregar o arquivo `.tsx` e travava em uma tela branca.
 
----
-
-## 1. Como Abrir e Extrair no WinRAR (Windows)
-
-1. Localize o arquivo baixado: `debora-guerra-portfolio.zip`.
-2. Clique com o **botão direito** no arquivo e selecione:
-   - **"Extrair para debora-guerra-portfolio\"** (ou *"Extrair aqui"*).
-3. O WinRAR criará a pasta com todos os arquivos do site organizados e prontos.
-
----
-
-## 2. Como Subir no GitHub (Método Fácil — Pelo Navegador)
-
-Você não precisa digitar comandos se preferir usar o navegador:
-
-1. Acesse [github.com](https://github.com) e entre na sua conta (ou crie uma gratuita).
-2. Clique no botão verde **"New"** (Novo Repositório).
-3. Em **Repository name**, digite: `debora-guerra-portfolio` (ou o nome que desejar).
-4. Deixe o repositório como **Public** e clique em **"Create repository"**.
-5. Na página que abrir, clique no link **"uploading an existing file"** (enviar arquivos existentes).
-6. Arraste todos os arquivos da pasta extraída pelo WinRAR para a tela do GitHub (exceto a pasta `node_modules` se existir).
-7. No final da página, clique no botão verde **"Commit changes"**.
+## ✅ O que foi corrigido nesta versão:
+Este arquivo ZIP já vem **100% PRÉ-COMPILADO em linguagem nativa da web (HTML5 + JavaScript ES6 + CSS + Imagens)**:
+- `index.html` — Arquivo HTML pronto que qualquer navegador e o GitHub Pages abrem imediatamente.
+- `assets/` — Todos os scripts JavaScript já traduzidos e empacotados, estilos CSS e imagens originais.
+- `.nojekyll` — Arquivo essencial que desativa o processador Jekyll do GitHub, garantindo que nenhum script seja bloqueado.
+- `404.html` — Garante que qualquer rota ou recarregamento de página funcione sem erro.
 
 ---
 
-## 3. Como Ativar o GitHub Pages Gratuitamente (Site no Ar!)
+## 🚀 PASSO A PASSO PARA SUBIR NO GITHUB (EM 2 MINUTOS)
 
-1. No seu repositório no GitHub, clique na aba **"Settings"** (Configurações) no menu superior.
-2. No menu lateral esquerdo, clique em **"Pages"**.
-3. Em **Build and deployment > Source**:
-   - Selecione **"GitHub Actions"**.
-4. Pronto! O arquivo `.github/workflows/deploy.yml` já incluso neste projeto cuidará de compilar e publicar o site automaticamente.
-5. Em cerca de 1 a 2 minutos, o GitHub exibirá o link público do site:
+### Passo 1: Extrair o ZIP no seu computador
+1. Dê um duplo-clique no arquivo `debora-guerra-portfolio.zip` (ou clique com o botão direito e selecione **"Extrair para debora-guerra-portfolio\"** no WinRAR).
+2. Você verá dentro da pasta:
+   - `index.html`
+   - `404.html`
+   - `.nojekyll`
+   - Pasta `assets/` (com scripts JS, CSS e imagens)
+   - Pasta `codigo-fonte-desenvolvedor/` (código TypeScript para quem quiser programar)
+
+### Passo 2: Subir os arquivos para o GitHub
+1. Acesse [github.com](https://github.com) e crie um novo repositório (exemplo: `debora-guerra-portfolio`). Deixe como **Public**.
+2. Na página do repositório vazio, clique no link **"uploading an existing file"** (enviar arquivos existentes).
+3. Arraste todos os arquivos da pasta extraída para a tela do GitHub:
+   - `index.html`
+   - `404.html`
+   - `.nojekyll`
+   - A pasta `assets`
+4. Clique no botão verde **"Commit changes"**.
+
+### Passo 3: Ativar o GitHub Pages (O Site entra no ar!)
+1. No seu repositório no GitHub, clique na aba **Settings** (Configurações).
+2. No menu da esquerda, clique em **Pages**.
+3. Em **Build and deployment > Source**, deixe marcado:
+   - **Deploy from a branch**
+4. Em **Branch**, selecione:
+   - **main** (ou *master*) e a pasta **/ (root)**.
+5. Clique em **Save**.
+6. Aguarde cerca de 30 a 60 segundos e recarregue a página de configurações. O GitHub mostrará o link oficial do seu site no ar:
    `https://seu-usuario.github.io/debora-guerra-portfolio/`
 
 ---
 
-## 4. Como Subir via Terminal (Git CLI)
-
-Se preferir utilizar o terminal:
-
-```bash
-git init
-git add .
-git commit -m "Portfólio Profissional Débora Guerra"
-git branch -M main
-git remote add origin https://github.com/SEU-USUARIO/debora-guerra-portfolio.git
-git push -u origin main
-```
-
----
-
-## 5. Como Testar e Rodar no seu Computador (Local)
-
-Para editar ou testar no seu computador com VS Code:
-
-1. Instale o [Node.js](https://nodejs.org/) (versão LTS).
-2. Abra o terminal na pasta do projeto e execute:
-   ```bash
-   npm install
-   ```
-3. Para iniciar o servidor local:
-   ```bash
-   npm run dev
-   ```
-4. Para gerar a versão final de produção:
-   ```bash
-   npm run build
-   ```
-   (A pasta `dist/` conterá o HTML, CSS e JS estáticos e otimizados).
+## 💻 Teste no Computador (Sem Internet)
+Você também pode abrir o arquivo `index.html` diretamente no seu navegador após extrair para verificar que ele funciona perfeitamente.
